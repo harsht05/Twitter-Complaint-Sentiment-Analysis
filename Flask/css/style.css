@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Redressed&display=swap');
+*{
+  padding:0;
+  margin:0;
+}
+.twitter{
+  width:80px;
+
+}
+
+
+body{
+  font-family:"Montserrat",sans-serif;
+}
+
+.container{
+  height:100vh;
+  display:flex;
+  flex-wrap:wrap;
+}
+
+h1{
+  font-family: 'Redressed', cursive;
+
+  }
+
+.Heading
+{
+  background-color:#1a1c20;
+  font-size: 40px;
+  color: white;
+  display: flex;
+  justify-content:center;
+}
+
+section
+{
+  height:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color:gray;
+  flex:1;
+  transition:all 0.3s;
+}
+@media screen and (max-width:789px)
+{
+  h1{
+    font-size:40px;
+    margin:auto;
+  }
+
+  section{
+    flex-direction:column;
+    height:50vh;
+  }
+  .container{
+    flex-direction: column;
+  }
+
+
+}
+@media screen and (max-width:481px)
+{
+  h1{
+    font-size:35px;
+  }
+  section h2{
+    font-size:40px;
+  }
+}
+
+@media screen and (max-width:432px)
+{
+  h1{
+    font-size:30px;
+  }
+  section h2{
+    font-size:35px;
+    padding:10px 15px;
+  }
+
+}
+
+@media screen and (max-width:388px)
+{
+  h1{
+    font-size:25px;
+  }
+  section h2{
+    font-size:25px;
+    padding:26px 28px;
+
+  }
+}
+
+section h2
+{
+  background:rgba(0,0,0,0.6);
+  color:white;
+  padding:30px 32px;
+  font-size:45px;
+}
+
+
+section:hover{
+  flex:2;
+
+
+}
+
+
+.news
+{
+  background:url("../static/news.jpg")#ff0909;
+  background-position: center;
+  background-size:cover;
+  background-blend-mode: multiply;
+}
+
+.sports
+{
+  background:url("../static/sports.jpg")#d2ff09;
+  background-position: center;
+  background-size:cover;
+  background-blend-mode: multiply;
+}
+
+
+.entertainment
+{
+  background:url("../static/entertainment.jpg")#09ff78;
+  background-position: center;
+  background-size:cover;
+  background-blend-mode: multiply;
+}
+
+
+.technology
+{
+  background:url("../static/techno.jpg")#ff0909;
+  background-position: center;
+  background-size:cover;
+  background-blend-mode: multiply;
+}
