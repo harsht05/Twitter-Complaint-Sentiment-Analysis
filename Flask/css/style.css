@@ -26,6 +26,7 @@ h1{
 
 .Heading
 {
+  position:relative;
   background-color:#1a1c20;
   font-size: 40px;
   color: white;

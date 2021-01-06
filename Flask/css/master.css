@@ -1,0 +1,21 @@
+h1{
+  font-family:"sans-serif",cursive;
+  text-align: center;
+  margin: 100px ;
+}
+
+
+form{
+  width:50%;
+  margin:auto;
+}
+
+button{
+  margin:auto;
+}
+
+
+.background
+{
+  background: url("../static/bts.jpg");
+}
