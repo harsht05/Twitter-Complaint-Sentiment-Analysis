@@ -9,26 +9,30 @@
     <link rel="stylesheet" href="../css/master.css">
   <title></title>
   </head>
-  <body class="uefa">
+  <body class="background_uefa">
 
     <h1>UEFA</h1>
+    <div class="Parent">
+
+
+    <div class="container">
+   <!--- <canvas id='myChart' width="1000" heigh="1000"></canvas> -->
+   <canvas id="pie-chart" width="500" height="500"></canvas>
+
+    </div>
     <div class="TweetBox">
       <form action="">
-        <input type="text" class="form-control" placeholder="Enter your Tweet" name="Tweet">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5">Enter Your Tweet</textarea>
         <button class="btn btn-primary" type="submit">Get Sentiment</button>
       </form>
     </div>
-
-    <div class="container">
-      <canvas id='myChart'></canvas>
     </div>
-
    
   </body>
 </html>
 
 <script>
-  let myChart=document.getElementById('myChart').getContext('2d');
+/*  let myChart=document.getElementById('myChart').getContext('2d');
 
     let massPopChart = new Chart(myChart, {
       type:'pie',
@@ -63,18 +67,32 @@
         borderColor:"rgb(0,0,0)",
         hoverBorderWidth:2
       },
-      layout:{
-        padding:{
-          left:50,
-          right:0,
-          bottom:0,
-          top:0,
-          background:"rgb(255,255,255,0.6)"
-        }
-      },
-      tooltips:{
-        enabled:true
+
+
+    },
+    responsive: false, 
+    maintainAspectRatio: true
+  });*/
+
+  new Chart(document.getElementById("pie-chart"), {
+    type: 'pie',
+    data: {
+      labels: ["Positive","Neutral","Negative"],
+      datasets: [{
+        label: "Sentiment Analysis",
+        backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+        data: [23,43,54]
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'Twitter Sentmiment Analysis for the Past 10 Days',
+        background:"gray",
+        fontColor:"rgb(0,0,0)",
+        fontSize:35,
+        hoverBorderWidth:2
       }
     }
-  });
+});
 </script>

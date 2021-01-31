@@ -9,6 +9,10 @@
 }
 
 
+
+
+
+
 body{
   font-family:"Montserrat",sans-serif;
 }
@@ -108,39 +112,4 @@ section:hover{
   flex:2;
 
 
-}
-
-
-.news
-{
-  background:url("../static/news.jpg")#ff0909;
-  background-position: center;
-  background-size:cover;
-  background-blend-mode: multiply;
-}
-
-.sports
-{
-  background:url("../static/sports.jpg")#d2ff09;
-  background-position: center;
-  background-size:cover;
-  background-blend-mode: multiply;
-}
-
-
-.entertainment
-{
-  background:url("../static/entertainment.jpg")#09ff78;
-  background-position: center;
-  background-size:cover;
-  background-blend-mode: multiply;
-}
-
-
-.technology
-{
-  background:url("../static/techno.jpg")#ff0909;
-  background-position: center;
-  background-size:cover;
-  background-blend-mode: multiply;
 }
