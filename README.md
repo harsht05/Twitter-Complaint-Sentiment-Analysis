@@ -7,5 +7,5 @@ Used NLTK library for removing stop-words.
 ## Deployment
 A basic responsive Flask App which is designed using HTML,CSS, basic JavaScript and Python\
 Used ChartJS for better visualisation of Data\
-Used TextBlob for getting the sentiment of a user input tweet and visualising the percentage using ChartJS\
+Used TextBlob for getting the sentiment of a user input tweet and visualising the percentage using ChartJS
 
