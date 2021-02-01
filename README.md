@@ -1,20 +1,33 @@
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
 # RealTime-Twitter-Sentiment-Analysis
-A **_Real-time Twitter sentiment analysis_** showcased with the help of **Twitter API's** , **NLTK** and **WORD2VEC**
-## Technologies Used
-### 1. Twint API
-   _Twint is an advanced tool for Twitter scrapping. We can use this tool to scrape any user’s followers, following, tweets, etc. without having to use Twitter API._
-
-We extracted over 3 lakh tweets for 5 topics via **Twint API** 
-### 2. Tweepy API
-  _Tweepy is an open source Python package that gives you a very convenient way to access the Twitter API with Python._
+  A **_Real-time Twitter sentiment analysis_** showcased with the help of **Twitter API's** , **NLTK** and **WORD2VEC**
   
-  We used this API for live pulling of tweets and showcasing them on live website
-### 2. NLTK
-### 2. Gensim's Word2Vec model
+  **You can visit our website [here](https://twitter-sentiment-analysis-znv.herokuapp.com/ "Twitter-Sentiment-Analysis")**
+## Technologies Used
+### 1. Tweepy API
+![Tweepy API](https://twilio-cms-prod.s3.amazonaws.com/images/twitter-python-logos.width-808.jpg "Tweepy API")
+ - _Tweepy is an open source Python package that gives you a very convenient way to access the Twitter API with Python._
+ - It's easy to understand its documentation [here](https://docs.tweepy.org/en/latest/api.html "docs.tweepy.org") 
+ - We used this API for live pulling of tweets and showcasing them on live website
+
+### 2. Twint API
+![Twint API](https://jakecrepscom.files.wordpress.com/2019/06/untitled-design-1.png?w=640 'Twint API')
+  - _"Twint is an advanced tool for Twitter scrapping. We can use this tool to scrape any user’s followers, following, tweets, etc. without having to use Twitter API"._
+  - You can check out more about **TWINT API** [here](https://github.com/twintproject/twint "ProjectTwint")
+  - In this project, we extracted over 3 lakh tweets for 5 topics via **Twint API** ranging from start of **2020** to present date
+  - **Twint API** is more preferable than **Tweepy API** because of its many benifits
+    - **Twitter API** has restrictions to scrape only the **last 3200 Tweets**. But Twint can fetch almost **all Tweets.**
+    - Set up is really quick as there is no hassle of setting up Twitter API.
+    - Can be used **anonymously** without Twitter sign-up.
+    It’s free!! No pricing limitations.
+
+### 3. NLTK
+  - **NLTK** also known as **Natural Language Toolkit** is the library used mainly for _Natural Language text processing_
+  - 
+### 4. Gensim's Word2Vec model
 ### 
 
-We performed the Analysis for the last 1 year and found out the percentage of positive,negative and neutral tweets in the last 1 year.\
-Used NLTK library for removing stop-words.
+We performed the Analysis for the last 1 year and found out the percentage of positive,negative and neutral tweets in the last 1 year.
 
 ## Deployment
 A basic responsive Flask App which is designed using HTML,CSS, basic JavaScript and Python\
