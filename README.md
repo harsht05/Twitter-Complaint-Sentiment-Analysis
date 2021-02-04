@@ -1,8 +1,8 @@
-[![All Contributors](https://img.shields.io/badge/Contributors-3-green.svg?style=square)](#contributors-) [![All Technologies](https://img.shields.io/badge/Technologies-4-orange.svg?style=square)](#technologies-) ![](https://img.shields.io/endpoint?url=<URL>&style<STYLE>)
+[![All Contributors](https://img.shields.io/badge/Contributors-3-green.svg?style=square)](#contributors-) [![All Technologies](https://img.shields.io/badge/Technologies-4-orange.svg?style=square)](#technologies-)
 # RealTime-Twitter-Sentiment-Analysis
   A **_Real-time Twitter sentiment analysis_** showcased with the help of **Twitter API's** , **NLTK** and **WORD2VEC**
   
-  **You can visit our website [here](https://twitter-sentiment-analysis-znv.herokuapp.com/ "Twitter-Sentiment-Analysis")**
+  **Visit our Website [here](https://twitter-sentiment-analysis-znv.herokuapp.com/ "Twitter-Sentiment-Analysis")**
 
 ---
 ## Live Demo
@@ -66,10 +66,10 @@ def pull_tweets(query, co=50):
   
   lemm = WordNetLemmatizer()
 
-stop_words = stopwords.words("english")
+  stop_words = stopwords.words("english")
   ```
   - You can check out whole data cleaning of tweets [here](https://github.com/Zeph-T/RealTime-Twitter-Sentiment-Analysis/blob/main/Classes/Data_cleaning.ipynb "Data Cleaning.ipynb")
-
+---
 ### 4. Gensim's Word2Vec model
 
   - After cleaning of Raw tweets, they are passed into Word2Vec model
@@ -97,7 +97,9 @@ w2v_model.build_vocab(sentences, progress_per=50000)
 
 ## Deployment
 
-A basic responsive Flask App which is designed using HTML,CSS, basic JavaScript and Python\
-Used ChartJS for better visualisation of Data\
-Used TextBlob for getting the sentiment of a user input tweet and visualising the percentage using ChartJS\
-Depoyed using Heroku
+A basic responsive Flask App which is designed using:
+  - HTML,CSS
+  - Basic JavaScript and Python
+  - Used ChartJS for better visualisation of Data
+  - Visualising the percentage using ChartJS\
+  - Depoyed using Heroku
