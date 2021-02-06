@@ -6,7 +6,7 @@
 
 ---
 ## Live Demo
-  <p align='center'><img src='./Readme/home.png' width='359'> <img src='./Readme/mobile_home.png' width='75'></p>
+  <p align='center'><img src='./Readme/home.png' width=75%><img src='./Readme/mobile_home.png' width=25%></p>
 
   - You will see this home page on visiting the site via Desktop and Mobile.
   - Select any topic:
@@ -16,13 +16,13 @@
     - **REACT**
     - **BCCI**
   - On selecting any topic, suppose say **UEFA**, it will open sentiment analysis on **UEFA**
-  <p align='center'><img src='./Readme/uefa.png' width='359'><img src='./Readme/uefa_mobile.png' width='100'></p>
+  <p align='center'><img src='./Readme/uefa.png' width=75%><img src='./Readme/uefa_mobile.png' width=25%></p>
 
   - On the left side, we have chart depicting the percentage of tweets sentiment for over an year.
   - On the right side, we see a text bar, where u can enter tweet to find its sentiment percentage.
   - Bottom to the text bar, you see live tweets with its sentiment emoji at right. 
   - Enter any tweet in the tweet bar to check its sentiment percentage
-  <p align='center'><img src="./Readme/uefa_tweet.png" alt="drawing" width="348"/> <img src="./Readme/uefa_tweet_mobile.png" alt="drawing" width="100"/></p>
+  <p align='center'><img src="./Readme/uefa_tweet.png" alt="drawing" width=75%/><img src="./Readme/uefa_tweet_mobile.png" alt="drawing" width=25%/></p>
 
 ---
 ## Technologies Used
@@ -112,6 +112,7 @@ w2v_model.build_vocab(sentences, progress_per=50000)
   from sklearn.feature_extraction.text import TfidfVectorizer
   ```
   - You can view the full code of how we utilized Tf-Idf [here](https://github.com/Zeph-T/RealTime-Twitter-Sentiment-Analysis/blob/main/Classes/Predictions.ipynb "Predictions.ipynb")    
+
 ---
 ## Deployment
 
@@ -121,3 +122,26 @@ A basic responsive Flask App which is designed using:
   - Used ChartJS for better visualisation of Data
   - Visualising the percentage using ChartJS\
   - Depoyed using Heroku
+---
+## Setting up the Project
+  1. Clone the repo
+  ```python
+  git clone https://github.com/Zeph-T/RealTime-Twitter-Sentiment-Analysis.git
+  ```
+  2. Navigate to Flask Folder, create a virtual environment
+  ```python
+  python3 -m venv <your_environment_name>
+  ```
+  3. Activate the virtual environment using the following command
+  ```python
+  Source <environment name>/bin/activate
+  ```
+
+  4. Install all the required Packages using the command
+  ```python
+  pip install -r requirements.txt
+  ```
+  5. Run the .py file
+  ```python
+  run python3 app.py
+  ```
