@@ -6,38 +6,67 @@
   <meta charset="utf-8">
   <title>Sentiment Analysis</title>
   <style>
-    .news {
-      background: url("../static/news.jpg")#ff0909;
-      background-position: center;
-      background-size: cover;
-      background-blend-mode: multiply;
-    }
-
-    .sports {
-      background: url("../static/sports.jpg")#d2ff09;
-      background-position: center;
-      background-size: cover;
-      background-blend-mode: multiply;
-    }
-
-
-    .entertainment {
-      background: url("../static/entertainment.jpg")#09ff78;
-      background-position: center;
-      background-size: cover;
-      background-blend-mode: multiply;
-    }
-
-
-    .technology {
-      background: url("../static/techno.jpg")#d252  ;
-      background-position: center;
-      background-size: cover;
-      background-blend-mode: multiply;
-    }
-
-
+    @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Redressed&display=swap');
+
+    .covid {
+      background: url("../static/pictures/news.jpg")#ff0909;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    .uefa {
+      background: url("../static/pictures/football.jpg")#d2ff09;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+
+    .bts {
+      background: url("../static/pictures/entertainment.jpg")#09ff78;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+
+    .react {
+      background: url("../static/pictures/reactjs.jpg")#d252;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    .bcci {
+      background: url("../static/pictures/bcc_mobile.jpg")#e255;
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: multiply;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: "Potta One";
+    }
+
+    section h2 {
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 30px 32px;
+      font-size: 45px;
+    }
+
+
+    section:hover {
+      flex: 2;
+    }
+
+    h2 {
+      background: black;
+    }
 
     * {
       padding: 0;
@@ -46,13 +75,7 @@
 
     .twitter {
       width: 80px;
-
     }
-
-
-
-
-
 
     body {
       font-family: "Montserrat", sans-serif;
@@ -139,46 +162,36 @@
 
       }
     }
-
-    section h2 {
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      padding: 30px 32px;
-      font-size: 45px;
-    }
-
-
-    section:hover {
-      flex: 2;
-
-
-    }
   </style>
 </head>
 
 <body>
   <div class="Heading">
-    <img class="twitter" src="../static/twitter.png" alt="">
+    <img class="twitter" src="../static/pictures/twitter.png" alt="">
     <h1>Twitter Sentiment Analysis</h1>
 
   </div>
   <div class="container">
-    <section class="news">
-      <h2>News</h2>
+    <section class="covid">
+      <h2><a href="/covid">COVID</a></h2>
     </section>
 
-    <section class="entertainment">
-      <h2>Enterainment</h2>
+    <section class="bts">
+      <h2> <a href="/bts">BTS</a></h2>
     </section>
 
-    <section class="sports">
-      <h2>Sports</h2>
+    <section class="uefa">
+      <h2><a href="/uefa">UEFA</a></h2>
     </section>
 
-    <section class="technology">
-      <h2>Technology</h2>
-    </section>
+    <section class="react">
+      <h2><a href="/react">REACT</a></h2>
 
+    </section>
+    <section class="bcci">
+      <h2><a href="/bcci">BCCI</a></h2>
+
+    </section>
   </div>
 </body>
 
