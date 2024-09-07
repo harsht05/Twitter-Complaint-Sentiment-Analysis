@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<!--grp39--> 
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Sentiment Analysis</title>
+  <title>Twitter Complaint Sentiment Analysis </title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Redressed&display=swap');
@@ -38,6 +39,7 @@
       background-size: cover;
       background-blend-mode: multiply;
     }
+ 
 
     .bcci {
       background: url("../static/pictures/bcc_mobile.jpg")#e255;
@@ -48,7 +50,7 @@
 
     a {
       text-decoration: none;
-      color: white;
+      color: #acd0f0;
       font-family: "Potta One";
     }
 
@@ -94,11 +96,12 @@
 
     .Heading {
       position: relative;
-      background-color: #1a1c20;
+      background-color: #000000;
       font-size: 40px;
-      color: white;
+      color: #acd0f0;
       display: flex;
       justify-content: center;
+    
     }
 
     section {
@@ -150,6 +153,14 @@
       }
 
     }
+    footer {
+      font-size: 15px;
+  
+      position:absolute;top: 0; right: 0;
+      text-align: center;
+      background-color: black;
+      width:100vw;
+    }
 
     @media screen and (max-width:388px) {
       h1 {
@@ -164,11 +175,12 @@
     }
   </style>
 </head>
+<!--grp39--> 
 
 <body>
   <div class="Heading">
     <img class="twitter" src="../static/pictures/twitter.png" alt="">
-    <h1>Twitter Sentiment Analysis</h1>
+    <h1>Twitter Complaint Sentiment Analysis</h1>
 
   </div>
   <div class="container">
@@ -190,9 +202,16 @@
     </section>
     <section class="bcci">
       <h2><a href="/bcci">BCCI</a></h2>
-
     </section>
+    
+  </div>
+
+  <div class="footer">
+    <h3> GROUP 39</h3>
+
   </div>
 </body>
+<!--grp39--> 
+
 
 </html>

@@ -1,13 +1,13 @@
 import tweepy
 import pandas as pd
 
-api_key="dwH2G54Nw25SGP2PyRvb50zu6"
-api_secret="sYU3mfpPopw9uKGTnqIWTx7ccBnf92TAVDh6seCVLuk4DE7R2I"
+api_key="El9D6nRuk029XbsXrHrCEnrO5"
+api_secret="xdlnIz5gw2IHZX6cocotoh4G1bpBqM65W57gkOsoGa1wjKz1ld"
+brerear_token = r"AAAAAAAAAAAAAAAAAAAAAM%2FlhwEAAAAAXPAgTTwb9PSLaVwlxJoJ7U2QAEU%3DcOI1qCd2OetwcPlCkTH8Ff3LWc4NO1IWuDb02F21T5TSrz7wd7"
 access_token="1344932530953207808-lr4PbJmWlHYKTmm8NZtp6dVYphCEMs"
 access_secret="3etQjNJdCyL0osXOmxEY7Gcadh09YrhpEEew2icJZeDTi"
 
 auth=tweepy.OAuthHandler(api_key,api_secret)
-auth.set_access_token(access_token,access_secret)
 api=tweepy.API(auth,wait_on_rate_limit=True)
 
 def pull_tweets(query, co=8):
